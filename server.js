@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 9000;
 
-app.use('/public', express.static('/public'));
+app.use('/public', express.static('./public'));
 
 app.get('/', (req,res) =>{
   res.sendFile('index.html', { root: './'});
