@@ -23,6 +23,9 @@ angular.module('myApp')
     },
     getBooks: function() {
       return library;
+    },
+    addBook: function(book){
+      library.push(book);
     }
   };
 }]);
