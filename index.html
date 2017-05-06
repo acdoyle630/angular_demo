@@ -16,6 +16,12 @@
     {{ firstName }}
     <br>
     {{ genChar }}
+    <br>
+    <div ng-repeat='book in books'>
+      TITLE: {{ book.title }} <br>
+      AUTHOR: {{ book.author }} <br>
+      PRINTED: {{ book.printed }} <br>
+    </div>
   </div>
 
   <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
@@ -30,6 +36,7 @@
     src = '/public/js/constants.js'></script>
   <script type='text/javascript'
     src = '/public/js/factories.js'></script>
-
+  <script type='text/javascript'
+    src = '/public/js/services.js'></script>
 </body>
 </html>
